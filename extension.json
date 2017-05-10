@@ -2,7 +2,7 @@
 	"name": "FilterSpecialPages",
 	"author": "Leonid Verhovskij",
 	"url": "https://www.mediawiki.org/wiki/Extension:FilterSpecialPages",
-	"description": "This extension adds a input field to Special:SpecialPages to filter entries.",
+	"description": "Inserts a field to filter entries in Special:Specialpages.",
 	"version": "0.9",
 	"license-name": "GPL-3.0+",
 	"type": "other",
