@@ -1,0 +1,40 @@
+{
+	"name": "FilterSpecialPages",
+	"author": "Leonid Verhovskij",
+	"url": "https://www.mediawiki.org/wiki/Extension:FilterSpecialPages",
+	"description": "This extension adds a input field to Special:SpecialPages to filter entries.",
+	"version": "0.9",
+	"license-name": "GPL-3.0+",
+	"type": "other",
+	"manifest_version": 1,
+	"AutoloadClasses": {
+		"FilterSpecialPages": "FilterSpecialPages.php"
+	},
+	"Hooks": {
+		"BeforePageDisplay": [
+			"FilterSpecialPages::onBeforePageDisplay"
+		]
+	},
+	"MessagesDirs": {
+		"FilterSpecialPages": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.filterspecialpages": {
+			"scripts": [
+				"resources/ext.filterspecialpages.js"
+			],
+			"styles": [
+				"resources/ext.filterspecialpages.css"
+			],
+			"messages": [
+				"filterspecialpages-hint-label"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "FilterSpecialPages"
+	}
+}

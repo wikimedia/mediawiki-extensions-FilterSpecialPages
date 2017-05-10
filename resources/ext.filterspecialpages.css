@@ -1,0 +1,8 @@
+#bodyContent{
+	position: relative;
+}
+#filterspecialpages{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
