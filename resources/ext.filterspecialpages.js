@@ -13,13 +13,11 @@
 		id="filterspecialpages" />' );
 	$( '#bodyContent' ).append( filterInput );
 	filterInput.focus();
-	filterInput.on( 'keyup', function () {
+	filterInput.on( 'keyup', function (e) {
 		if ( filterInput.val().length === 0 ) {
-			console.log( "empty, show all" );
 			$( '#bodyContent li' ).show();
 		} else {
 			//display hide all li's where text not in
-			console.log( "show only containing" + filterInput.val() );
 			$( '#bodyContent li:not(:containsi(' + filterInput.val() + '))' ).hide();
 			$( '#bodyContent li:containsi(' + filterInput.val() + ')' ).show();
 		}
@@ -32,5 +30,29 @@
 			}
 		} );
 
+		//if esc key pressed, toggle select input value
+		if ( e.keyCode === 27 ) {
+			var selection = window.getSelection().toString();
+			if ( selection ===  filterInput.val() ) {
+				//Cursor to end
+				filterInput.focus();
+				var tmpStr = filterInput.val();
+				filterInput.val( '' );
+				filterInput.val( tmpStr );
+			} else {
+				//select all text
+				filterInput.select();
+			}
+		}
+
+		//if only one entry left, open entry link on enter key
+		if ( e.keyCode === 13 ) {
+			var visibleLinks = $( '#bodyContent li:containsi(' + filterInput.val() + ')' );
+			if ( visibleLinks.size() === 1 ){
+				window.location.href = visibleLinks.find("a").attr("href");
+			}
+		}
+
 	} );
+
 }( jQuery, mediaWiki ) );
