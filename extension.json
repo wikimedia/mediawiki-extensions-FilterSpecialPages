@@ -30,6 +30,9 @@
 			],
 			"messages": [
 				"filterspecialpages-hint-label"
+			],
+			"dependencies": [
+				"oojs-ui"
 			]
 		}
 	},
