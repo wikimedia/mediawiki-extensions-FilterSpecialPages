@@ -25,9 +25,6 @@
 			"scripts": [
 				"resources/ext.filterspecialpages.js"
 			],
-			"styles": [
-				"resources/ext.filterspecialpages.css"
-			],
 			"messages": [
 				"filterspecialpages-hint-label"
 			],
