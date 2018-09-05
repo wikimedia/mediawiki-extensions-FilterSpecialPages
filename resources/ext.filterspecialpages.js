@@ -11,7 +11,7 @@
 		"id": "filterspecialpages",
 		"name": "filterspecialpages"
 	} );
-	$( '#bodyContent' ).append( filterInput.$element );
+	$( '#bodyContent' ).prepend( filterInput.$element );
 	filterInput.focus();
 	filterInput.on( 'change', function ( value ) {
 		if ( value.length === 0 ) {
