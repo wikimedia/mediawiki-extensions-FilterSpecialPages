@@ -2,7 +2,7 @@
 	"name": "FilterSpecialPages",
 	"author": "Leonid Verhovskij",
 	"url": "https://www.mediawiki.org/wiki/Extension:FilterSpecialPages",
-	"description": "Inserts a field to filter entries in Special:Specialpages.",
+	"descriptionmsg": "bs-filterspecialpages-desc",
 	"version": "0.9",
 	"license-name": "GPL-3.0+",
 	"type": "other",
@@ -24,9 +24,6 @@
 		"ext.filterspecialpages": {
 			"scripts": [
 				"resources/ext.filterspecialpages.js"
-			],
-			"styles": [
-				"resources/ext.filterspecialpages.css"
 			],
 			"messages": [
 				"filterspecialpages-hint-label"
