@@ -1,4 +1,4 @@
 {
-	"filterspecialpages-hint-label": "Find page",
-	"bs-filterspecialpages-desc": "Inserts a field to filter entries in Special:Specialpages."
+	"filterspecialpages-desc": "Inserts a field to filter entries in Special:Specialpages.",
+	"filterspecialpages-hint-label": "Find page"
 }
