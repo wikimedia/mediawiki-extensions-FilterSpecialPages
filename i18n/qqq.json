@@ -1,4 +1,4 @@
 {
 	"filterspecialpages-hint-label": "Hint Label for filter inputer field",
-	"bs-visualeditorconnector-desc": "Used in [{{canonicalurl:Special:Version}} Special:Version], description of FilterSpecialPages extension."
+	"filterspecialpages-desc": "Used in [{{canonicalurl:Special:Version}} Special:Version], description of FilterSpecialPages extension."
 }
