@@ -11,9 +11,7 @@
 		"FilterSpecialPages": "FilterSpecialPages.php"
 	},
 	"Hooks": {
-		"BeforePageDisplay": [
-			"FilterSpecialPages::onBeforePageDisplay"
-		]
+		"BeforePageDisplay": "FilterSpecialPages::onBeforePageDisplay"
 	},
 	"MessagesDirs": {
 		"FilterSpecialPages": [
