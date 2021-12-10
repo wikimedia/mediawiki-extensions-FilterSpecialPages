@@ -6,7 +6,9 @@
 	"version": "0.9",
 	"license-name": "GPL-3.0+",
 	"type": "other",
-	"manifest_version": 1,
+	"requires": {
+		"MediaWiki": ">= 1.31.0"
+	},
 	"AutoloadClasses": {
 		"FilterSpecialPages": "FilterSpecialPages.php"
 	},
@@ -34,5 +36,6 @@
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
 		"remoteExtPath": "FilterSpecialPages"
-	}
+	},
+	"manifest_version": 2
 }
