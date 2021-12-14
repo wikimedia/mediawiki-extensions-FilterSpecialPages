@@ -6,20 +6,20 @@
 					.indexOf( ( match[3] || "" ).toLowerCase() ) >= 0;
 		}
 	} );
-	var filterInput = new OO.ui.TextInputWidget( {
+	var filterInput = new OO.ui.SearchInputWidget( {
 		"placeholder": mw.message( 'filterspecialpages-hint-label' ).text(),
 		"id": "filterspecialpages",
 		"name": "filterspecialpages"
 	} );
-	$( '#bodyContent' ).prepend( filterInput.$element );
+	$( '#content' ).prepend( filterInput.$element );
 	filterInput.focus();
 	filterInput.on( 'change', function ( value ) {
 		if ( value.length === 0 ) {
-			$( '#bodyContent li' ).show();
+			$( '#content li' ).show();
 		} else {
 			//display hide all li's where text not in
-			$( '#bodyContent li:not(:containsi(' + value + '))' ).hide();
-			$( '#bodyContent li:containsi(' + value + ')' ).show();
+			$( '#content li:not(:containsi(' + value + '))' ).hide();
+			$( '#content li:containsi(' + value + ')' ).show();
 		}
 		//hide empty sections, show non empty sections
 		$( '.mw-specialpages-list ul, .mw-specialpages-notes ul' ).each( function () {
@@ -49,7 +49,7 @@
 	} );
 
 	filterInput.on( 'enter', function ( e ) {
-		var visibleLinks = $( '#bodyContent li:containsi(' + filterInput.getValue() + ')' );
+		var visibleLinks = $( '#content li:containsi(' + filterInput.getValue() + ')' );
 		if ( visibleLinks.size() === 1 ) {
 			window.location.href = visibleLinks.find( "a" ).attr( "href" );
 		}
