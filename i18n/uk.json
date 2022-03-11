@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"DDPAT"
+			"DDPAT",
+			"Ice bulldog"
 		]
 	},
 	"filterspecialpages-desc": "Вставляє поле для фільтрації записів [{{canonicalurl:Special:SpecialPages}} Special:SpecialPages].",
