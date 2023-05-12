@@ -6,7 +6,7 @@
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:FilterSpecialPages",
 	"descriptionmsg": "filterspecialpages-desc",
-	"version": "1.0.0-beta",
+	"version": "1.0.1",
 	"license-name": "GPL-3.0+",
 	"type": "other",
 	"manifest_version": 1,
