@@ -6,11 +6,11 @@
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:FilterSpecialPages",
 	"descriptionmsg": "filterspecialpages-desc",
-	"version": "3.0.0-alpha",
+	"version": "4.0.0-alpha",
 	"license-name": "GPL-3.0+",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.39.0"
+		"MediaWiki": ">= 1.43.0"
 	},
 	"AutoloadClasses": {
 		"FilterSpecialPages": "FilterSpecialPages.php"
