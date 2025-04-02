@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ykhwong",
-			"Tensama0415"
+			"Tensama0415",
+			"Ykhwong"
 		]
 	},
 	"filterspecialpages-desc": "[{{canonicalurl:Special:SpecialPages}} Special:SpecialPages]의 항목을 필터링하기 위한 필드를 삽입합니다.",
